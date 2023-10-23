@@ -6,3 +6,4 @@ kdt 10 lesson
 
 // add, commit, push
 
+졸려 배고파
