@@ -1,0 +1,56 @@
+* {
+  padding: 0px;
+  box-sizing: none;
+  margin: 0px;
+}
+
+h3 {
+  color: white;
+  background-color: black;
+  width: 55px;
+  border: 1px
+}
+
+
+.red {
+  width: 50px;
+  background-color: red;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.orange {
+  width: 100px;
+  background-color: orange;
+
+}
+
+.yellow {
+  width: 150px;
+  background-color: yellow;
+
+}
+
+.green {
+  width: 200px;
+  background-color: green;
+
+}
+
+.blue {
+  width: 250px;
+  background-color: blue;
+
+}
+
+.navy {
+  width: 300px;
+  background-color: navy;
+
+}
+
+.purple {
+  width: 350px;
+  background-color: purple;
+bor
+}
