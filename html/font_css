@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100&display=swap');
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 4;
+  background-color: balck
+}
+
+.google {
+  font-family: 'Nanum Brush Script',
+    cursive;
+  font-family: 'Noto Sans KR',
+    sans-serif;
+}
+
+.noon {}

@@ -12,8 +12,8 @@
       background-color: red;
     }
 
-    /*사파리 안의 사자만 선택 배경색은 greenyellow (자식 선택자 사용)*/
-    ul>.lion {
+    /*사파리 안의 사자만 선택 배경색은 greenyellow (하위(후손) 선택자 사용)*/
+    ul .lion {
       background-color: greenyellow;
     }
 
@@ -23,8 +23,8 @@
     }
 
     /*사자를 전부  글자는 sienna*(일반 형제 사용// 일치선택자)*/
-    body>.lion {
-      color: cyan
+    .lion {
+      color: sienna
     }
 
     /*호랑이 뒤에 있는 팬더를 선택 배경색은 skyblue* (인접 형제 사용)*/
@@ -33,7 +33,7 @@
     }
 
     /*사파리 사자 뒤에 있는 사육사를 모두 선택 배경은 orange*(일반 형제)*/
-    .lion~li {
+    .lion~li~li {
       background-color: orange;
     }
   </style>

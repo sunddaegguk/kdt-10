@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .stripes *:nth-child(even) {
+      /*짝수 줄만 옐로우로 배경 칠하자*/
+      background-color: yellow
+    }
+
+    .stripes *:nth-child(odd) {
+      /*홀수 줄만 네이비색으로 칠하자*/
+      background-color: navy;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stripes">
+    <div>navy</div>
+    <div>yellow</div>
+    <div>navy</div>
+    <div>yellow</div>
+    <div>navy</div>
+    <div>yellow</div>
+    <div>navy</div>
+    <div>yellow</div>
+    <div>navy</div>
+    <div>yellow</div>
+  </div>
+</body>
+
+</html>

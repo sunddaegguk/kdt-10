@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Disabled 속성을 가진 태그 선택 => 배경은 빨간색 */
+    [disabled] {
+      background-color: red
+    }
+
+    /* placeholder 속성이 "이름" 값을 가지는 태그 선택 => 배경 오렌지 */
+    [placeholder="이름"] {
+      background-color: orange
+    }
+
+    /* placeholder 속성을 가지지 않는 태그 선택 => 배경 파란샥 */
+    *:not([placeholder]) {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" placeholder="이름" />
+  <input type="password" value="pw" />
+  <input type="text" value="000-0000-0000" />
+  <input type="text" placeholder="핸드폰" />
+  <input type="text" placeholder="주민번호" disabled />
+</body>
+
+</html>
