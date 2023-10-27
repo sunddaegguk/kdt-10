@@ -1,0 +1,126 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Diphylleia&family=Dongle&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100&display=swap"
+      rel="stylesheet">
+
+    <style>
+      @font-face {
+        font-family: 'establishRetrosansOTF';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 100%;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+      }
+
+      form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -150px 0 0 -150px;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 40px;
+        margin-right: 40px;
+      }
+
+      input[type=text] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+      }
+
+      input[type=text]:focus {
+        border-color: #333;
+      }
+
+      input[type=submit] {
+        padding: 5px 15px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        width: 130px;
+        float: left;
+
+      }
+
+      label:after {
+        content: ": "
+      }
+    </style>
+  </head>
+
+  <body>
+
+  </body>
+
+  </html>
+  <form>
+    <h4 style="font-family:'Black Han Sans'">설문조사</h4>
+    <br>
+    <br>
+    <br>
+    <p>
+      <label for=" name" style="font-family:'Black Han Sans'">이름</label>
+      <input type="text" name="name" id="name">
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" placeholder="love@example.com">
+    </p>
+    <br><br>
+    <h3 style="font-family:'Black Han Sans'">나이</h3>
+    <br>
+    <input type="radio" name="age" value="10대" checked><span style="font-family: 'establishRetrosansOTF';">10대</span>
+    <input type="radio" name="age" value="20대"><span style="font-family: 'establishRetrosansOTF';">20대</span> <input
+      type="radio" name="age" value="30대"><span style="font-family: 'establishRetrosansOTF';">30대</span> <input
+      type="radio" name="age" value="40대"><span style="font-family: 'establishRetrosansOTF';">40대</span> <input
+      type="radio" name="age" value="40대"><span style="font-family: 'establishRetrosansOTF';">50대</span> <input
+      type="radio" name="age" value="40대"><span style="font-family: 'establishRetrosansOTF';">60대 이상</span> <br><br>
+    <h3 style="font-family:'Black Han Sans'">원하는 강의(복수 응답 가능)</h3>
+    <br>
+    <input type="checkbox" name="lecture" value="html" checked><span
+      style="font-family: 'establishRetrosansOTF';">html</span>
+    <input type="checkbox" name="lecture" value="javascript"><span
+      style="font-family: 'establishRetrosansOTF';">css</span>
+    <input type="checkbox" name="lecture" value="javascript"><span
+      style="font-family: 'establishRetrosansOTF';">javascript</span>
+
+
+    <br><br>
+    <textarea cols="100" rows="10" placeholder="하고 싶은 말을 써주세요~"></textarea>
+    <input type="submit" value="제출">
+  </form>
