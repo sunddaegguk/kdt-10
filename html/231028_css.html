@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex!!</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background-color: grren;
+      width: 500px;
+      height: 300px;
+      border: 3px solid blue;
+      background-color: green;
+      display: flex;
+      flex-direction: row-reverse;
+      flex-direction: column-reverse;
+    }
+
+    .container>div {
+      width: 100px;
+      height: 100px;
+
+    }
+
+    .item1 {
+      background-color: red;
+    }
+
+    .item2 {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item1">3</div>
+    <div class="item2">4</div>
+    <div class="item1">5</div>
+    <div class="item2">6</div>
+  </div>
+</body>
+
+</html>
