@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      display: grid;
+      grid-template-rows: repeat(5, minmax(50px, auto));
+
+      position: absolute;
+    }
+
+    .container1 {
+      display: grid;
+      justify-items: stretch;
+      grid-template-rows: repeat(5, minmax(50px, auto));
+      grid-auto-flow: dense;
+      position: relative;
+    }
+
+    .container2 {
+      display: grid;
+      justify-items: stretch;
+      grid-template-rows: repeat(5, minmax(50px, auto));
+      grid-auto-flow: dense;
+      position: relative;
+    }
+
+    .anime1 {
+      display: grid;
+      animation: 3s slidein;
+      justify-items: stretch;
+      position: relative;
+
+    }
+
+    .anime2 {
+      display: grid;
+      animation: 5s slidein2;
+      justify-items: stretch;
+      position: relative;
+    }
+
+
+
+
+
+    @keyframes slidein {
+      0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0)
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateZ(0)
+      }
+
+    }
+
+    @keyframes slidein2 {
+      0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0)
+      }
+
+      50% {
+        opacity: 1;
+        transform: translate3d(-50%, 0, 0)
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateZ(0)
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="conatainer1">
+    <p class="anime1">I’d always thought of it as a secret, imaginary place, and can barely believe that it actually
+      exists.I close my eyes and take a breath, and wonder of it all settles over me like a gentle cloud.”settles over
+      me like a gentle cloud.”“As I relaxon the sofa <p>
+
+        <p class="anime2">hits me: this is exactlythe place I’ve been looking for all my life. A little hideaway in some
+          sinkhole somewhere.
+        </p>
+  </div>
+</body>
+
+</html>

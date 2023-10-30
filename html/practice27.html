@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      width: 500px;
+      height: 500px;
+      position: relative;
+    }
+
+    .round {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: crimson;
+      border-radius: 50%;
+      animation-name: miami;
+      animation-duration: 3s;
+      animation-iteration-count: 6;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+
+    }
+
+    @keyframes miami {
+      0% {
+        right: 10%;
+      }
+
+      50% {
+        bottom: 10%;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="round"></div>
+</body>
+
+</html>
