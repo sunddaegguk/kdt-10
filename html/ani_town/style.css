@@ -2,9 +2,15 @@
   TODO: HTML 요소들의 크기는 미리 설정해 두었습니다.
   position, animation 등을 활용하여 과제를 완성해주세요!
 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
+  background-color: #636888;
   width: 100%;
-  background-color: black;
   display: absolute;
 }
 
@@ -24,25 +30,43 @@ section .sky .sun {
   width: 180px;
 }
 
+.sun {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+}
+
 
 section .sky .moon {
   width: 160px;
+}
+
+.moon {
+  position: absolute;
+  left: 200px;
+  top: 50px;
 }
 
 section .sky .cloud_1 {
   width: 160px;
   position: absolute;
   top: 290px;
+  left: 300px;
 }
 
 section .sky .cloud_2 {
   width: 90px;
   position: absolute;
   top: 330px;
+  left: 300px;
 }
 
 section .city .city_img {
   width: 100%;
+}
+
+.milk {
+  opacity: 0.4;
 }
 
 /* ANIMATION */
@@ -56,14 +80,15 @@ section .city .city_img {
 */
 .container {
   display: absolute;
-  animation: bod 2s ease-in-out infinte normal runnings;
+  animation: changeBg 3s infinite;
+  width: 100%;
+  height: 100%;
+
 
 }
 
-@keyframes bod {
-  10% {
-    transform: rotate(120deg);
-  }
+@keyframes changeBg {
+
 
   20% {
     background-color: #b1e1e2;
@@ -79,10 +104,6 @@ section .city .city_img {
 
   }
 
-  80% {
-    background-color: #675577;
-
-  }
 
   100% {
     background-color: #636888;
@@ -92,7 +113,7 @@ section .city .city_img {
 }
 
 .sun {
-  animation: sun 3s ease 1s infinite normal forwards;
+  animation: sun 3s ease 4.3s infinite normal forwards;
 }
 
 
@@ -109,17 +130,19 @@ section .city .city_img {
 }
 
 .moon {
-  animation: moon 3s ease infinite normal forwards;
+  animation: moon 3s ease 0.9s infinite normal forwards;
 }
 
 @keyframes moon {
   0% {
-    transform: rotate(0deg);
+    transform3d: rotate(100%, 0);
+    opacity: 0;
   }
 
   25% {
-    transform: rotate(-40deg);
+    transform3d: rotate(360deg, 0);
     opacity: 0.5;
+
   }
 
   50% {
@@ -139,6 +162,9 @@ section .city .city_img {
     transform: translateX(-100px);
   }
 
+  50% {
+    left: -20%;
+  }
 }
 
 .cloud_2 {

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variabl</title>
+  <script>
+    let myName = "길동"
+    let email = 'gildong@naver.com'
+    let city = '서울'
+
+    console.log(myName)
+    console.log(email)
+    console.log(city)
+
+    console.log(`내이름은 ${myName} 입니다.`)
+    console.loy(' 내 이름은 ' + myName + '입니다.');
+
+
+    let rainbow = [red, blue, green, yellow]
+
+    /////////////////////////////
+    /*prac 4*/
+    //변수 mathScore, engScore를 만들어주세요.
+    //mathScore = "77"; engScore = "88";
+    let mathScore = 77
+    let engScore = 88
+    //형변환
+    let math = parseInt(mathScore, 10)
+    console.log(math)
+    let eng = parseInt(engScore, 10)
+    console.log(eng)
+    console.log(typeof (eng))
+    console.log(typeof (math))
+    //시험 점수 평균을 계산하여 avgScore에 저장하고, 이를 출력하는 프로그램을 작성하세요.!
+    let avgScore = (math + eng) / 2
+    console.log(avgScore)
+    //명시적 형변환 체크
+    console.log(typeof (avgScore))
+    console.log(`mathScore의 점수는 ${mathScore}이며 engScore의 점수는 ${engScore}입니다. mathScore와 engScore의 평균을 구한 값은 ${avgScore}입니다.
+`)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
