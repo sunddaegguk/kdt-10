@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let double = [];
+    console.log(double);
+    let triple = [];
+    console.log(triple);
+    let pho = parseInt(prompt("정수 n의 값을 넣기"));
+    console.log(`정수 n의 값은 ${pho}`);
+    for (let i = pho; i >= 0 && i <= 100; i++) {
+      console.log(`i에 pho가 들어갔으면 ${i}는 ${pho}와 같다.`);
+      if (i % 2 === 0) {
+        double.push(i);
+        console.log(double);
+      }
+    }
+    for (let k = pho; k >= 0 && k <= 100; k++) {
+      console.log(`i에 pho가 들어갔으면 ${k}는
+    ${pho}와 같다.`);
+      if (k % 3 === 0) {
+        triple.push(k);
+        console.log(triple);
+      }
+    }
+    const subDouble = double.reduce(function (total, current) {
+      return total + current;
+    }, 0);
+    console.log(`정수 n의 2 배수의 총합은 ${subDouble}`);
+    const
+      subTriple = triple.reduce(function (total, current) {
+        return total + current;
+      }, 0);
+    console.log(`정수 n의 3배수의 총합은
+    ${subTriple}`);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //함수 선언
+    function multiply(a, b) {
+      //함수 선언문
+      return a * b
+    }
+    //함수 호출
+    console.log(multiply(3, 7));
+    console.log(multiply(2, 2));
+    ////////////////////////
+    //함수 선언
+    multiply = (a, b) => {
+      //함수 선언문
+      return a + b
+    }
+    //함수호출
+    console.log(multiply(2, 5))
+    console.log(multiply(10, 20))
+    ////////////////////////////////
+    //함수 선언
+    function squareRoot(a) {
+      //함수 선언문
+      return a ** 2
+    }
+    //함수호출
+    console.log(squareRoot(4))
+    console.log(squareRoot(11));
+    console.log(squareRoot(5))
+    ////////////////////////////
+    //함수 선언
+    squareRoot = (a) => {
+      //함수 선언문
+      return a ** 2
+    }
+    //함수호출
+    console.log(squareRoot(4))
+    console.log(squareRoot(11))
+    console.log(squareRoot(5))
+    //////////////////
+    ////////////////////////////////////////////////////////////////
+
+
+    //onclick
+    function test() {
+      alert('onclick test');
+    }
+  </script>
+</head>
+
+<body>
+  <div style="width: 100px; height: 100px; border: 1px solid black;" onclick="test()">test</div>
+
+
+
+</body>
+
+</html>

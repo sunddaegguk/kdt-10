@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    document.querySelector("#addNumbering").addEventListener("click", function () {
+      let num1 = parseInt(prompt("첫 번째 숫자는?"));
+      let num2 = parseInt(prompt("두 번째 숫자는?"));
+      let sum = addNumber(num1, num2);
+      alert(`두 수의 합은 ${sum} 입니다.`);
+    });
+
+    function addNumber(a, b) {
+      return a + b;
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <button id="addNumbering" label="Add" title="Add">hello</button>
+  </div>
+</body>
+
+</html>

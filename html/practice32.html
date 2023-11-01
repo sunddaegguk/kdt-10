@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function calculateSum() {
+      let num1 = parseInt(prompt("첫 번째 숫자는?"))
+      let num2 = parseInt(prompt("두 번째 숫자는?"))
+      let result = sum(num1, num2);
+      alert(`두 수의 합은 ${result} 입니다.`)
+    }
+
+    function sum(a, b) {
+      return a + b;
+    }
+
+    function calculateSub() {
+      let num1 = parseInt(prompt("첫 번째 숫자는?"))
+      let num2 = parseInt(prompt("두 번째 숫자는?"))
+      let result = subtract(num1, num2);
+      alert(`두 수의 빼기는 ${result} 입니다.`)
+    }
+
+    function subtract(a, b) {
+      return a - b;
+    }
+
+    function calculateMul() {
+      let num1 = parseInt(prompt("첫 번째 숫자는?"))
+      let num2 = parseInt(prompt("두 번째 숫자는?"))
+      let result = multiply(num1, num2);
+      alert(`두 수의 곱은 ${result} 입니다.`)
+    }
+
+    function multiply(a, b) {
+      return a * b;
+    }
+
+    function calculateDiv() {
+      let num1 = parseInt(prompt("첫 번째 숫자는?"))
+      let num2 = parseInt(prompt("두 번째 숫자는?"))
+      let result = divide(num1, num2);
+      alert(`두 수의 나누기는 ${result} 입니다.`)
+    }
+
+    function divide(a, b) {
+      return a / b;
+    }
+  </script>
+</head>
+
+<body>
+  <button onclick="calculateSum()">썸</button>
+  <button onclick="calculateSub()">썹</button>
+  <button onclick="calculateMul()">멀</button>
+  <button onclick="calculateDiv()">디</button>
+
+</body>
+
+</html>
