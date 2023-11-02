@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let fruits1 = ["수박", "사과", "파인애플", "참외", "오렌지", "망고", "자두", "딸기"]
+    console.log(typeof (fruits1))
+    let fruits2 = ["수박", "사과", "파인애플", "참외", "오렌지", "망고"]
+    console.log(typeof (fruits2))
+
+    let sam = fruits1.filter(function (i) {
+      return fruits2.includes(i)
+    })
+    let same = Object.values(sam);
+    console.log("최최종 " + typeof (same))
+    console.log("최종 " + typeof (sam))
+    console.log(`배열1(fruits1)과 배열2(fruits2)의 중복 값은 ${sam} 총 ${sam.length}가지 입니다.`)
+
+    let jeff = fruits1.filter(function (i) {
+      return !fruits2.includes(i)
+    })
+    console.log(typeof (jeff))
+    console.log(`배열1(fruits1)과 배열2(fruits2)의 중복하지 않는 값은 ${jeff} 총 ${jeff.length}가지 입니다.`)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

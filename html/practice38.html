@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //1에서 100까지의 배열을 for문을 사용해서 만들기
+    //for문 사용
+    let array = [];
+    let hello = 0;
+    for (let i = 0; i <= 100; i++) {
+      array.push(i);
+      hello = hello + i;
+    }
+    console.log(`for문을 이용해서 배열 array(1~100)전체의 합은 ${hello}`);
+
+    //for of 문 
+    let sum = 0;
+    for (const value of array) {
+      // console.log(value)
+      //console.log(array) 
+      sum += value;
+    }
+    console.log(`for of문을 이용해서 배열 array(1~100)전체의 합은 ${sum}`);
+    //forEach()문 
+    let summer = 0;
+    array.forEach(function (arr) {
+      summer = summer + arr;
+    });
+    console.log(`forEach문을 이용해서 배열 array(1~100)전체의 합은
+  ${summer}`);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

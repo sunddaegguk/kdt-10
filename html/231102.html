@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //문자열 관련 
+    let sty = ' Happy day~! '
+
+    //1. 문자열 길이
+    console.log('length: ', str.length)
+
+    //2. (Eng) 문자열을 대문자/소문자로 바꿔 주기
+    console.log(`toUpperCase() :`, str.toUpperCase())
+    consle.log(`toLowerCase() :`, str.toLowerCase())
+
+    //3. index를 가져오기
+    console.log(`index :`, str.indexOf('y'));
+    console.log(`lastIndeoxOf :`, str.lastIndexOf('y'));
+
+    //4. 문자열 자르기 (essential, optional)
+    console.log(`slice: `, str.slice(0, 2));
+    console.log(`slice:`, str.slice(-2));
+
+    //5. 문자열 바꾸기
+    console.log(`replace p -> a :`, str.replace('p', 'a'));
+    console.log(`replaceAll a -> p :`, str.replaceAll('a', 'p'));
+
+    //6. 반복
+    console.log(`repeat :`,   str.repeat(5));
+    console.log(`repeat:`, str.repeat('5' * 5));
+
+    //7.  split :문자열 편집 
+    console.log(`split :`, str.split(""));
+    console.log(`split:`, str.split(' '));
+    console.log(`split:`, str.split('a'));
+
+    ////////////////////////////////
+    /////////////////////////////////
+
+    /*array method*/
+
+    //join : join 안에 문자열 기준으로 문자열로 병합//
+
+    let days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+    console.log(`join:`, days.join("-_-"));
+    console.log(`join:`, days.join());
+
+
+    /*method chaining*/
+    //각각의 다른 메소드를 연결해서 사용하는 개념.
+    // 메소드에 return이 있을 때 사용 가능 함. 
+
+    let hello = "Hello It's me !!"
+    let helloArr = hello.split(""); // ["H","E","L","L","O"]
+    let reverseHello = helloArr.reverse()
+    console.log(`reverse :`, reverseHello)
+    let helloAgain = reverseHello.join("");
+    console.log(`hello revserse str :`, helloAgain)
+    console.log(`method chaining :`, hello.split("").reveser().join(""));
+
+    /*for in array*/
+    //for 
+    //for (singular in plural)
+    //for of
+    //forEach() 
+    
+    
+
+
+  </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
