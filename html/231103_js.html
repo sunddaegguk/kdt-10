@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표준 내장 객체</title>
+  <script>
+    /* 1.date */
+    let now = new Date();
+    console.log(now);
+    console.log(now.getFullYear(), "year");
+    console.log(now.getFullYear() + 1, "month");
+    console.log(now.getFullYear() + 1, "days");
+    // 2023 - 11 - 03
+
+    console.log(now.getHours() + "hours" + now.getMinutes)
+    console.og(now.getMinutes() + "min")
+    console.log(now.getSeconds() + " seconds")
+    console.log(now.getMilliseconds() + "milliSec")
+    console.log(now.getDay() + "days") // 0:sun  to 6:sat
+
+
+    // weather weekends or weekdays
+
+    // 0 || 6 weekends
+    // 1 || 2 || 3 || 4 || 5 weekdays
+    let days = now.getDays()
+    console.log(days)
+
+
+
+    /*Math*/
+    //속성
+    console.log(Math.PI);
+    console.log(Math.E);
+    console.log(Math.SQRT2);
+
+    //메소드
+    console.log(Math.min()) /// console.log(Math.min(1, 2, 3,4,5,6,7,8, -10))
+    console.log(Math.Max()) // console.log(math.Max(2,3,5,6,-2,3,5,3,2,1))
+    console.log(Math.random())
+    console.log(Math.round(5.1));
+    console.log(Math.floor(5.1));
+    console.log(Math.ceil(5.1));
+
+    console.log(Math.sqrt(5.1));
+    console.log(Math.random().Max(101).min(1) - 1)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
