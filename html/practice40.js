@@ -1,25 +1,15 @@
-let calculator = document
-  .getElementById("btn1")
-  .addEventListener("click", function () {
-    let first = parseInt(document.getElementById("val1").value);
-    let operators = document.getElementById("operators").value;
-    let second = parseInt(document.getElementById("val2").value);
-    let calculatedResult = result(first, operators, second);
-
-    document.getElementById("result").value = calculatedResult;
+function makeElem() {
+  divs.forEach((elem) => {
+    const btn = document.createElement("button");
+    btn.textContent = "Example";
+    let a = "a";
+    let b = "b";
+    btn.addEventListener("click", (e) => callback(a, b, e));
+    
+    elem.appendChild(btn);
   });
+}
 
-function result(first, operators, second) {
-  switch (operators) {
-    case "+":
-      return first + second;
-    case "-":
-      return first - second;
-    case "*":
-      return first * second;
-    case "/":
-      return first / second;
-    default:
-      return "올바른 연산자를 입력하세요. (+, -, *, /)";
-  }
+function callback(e, a, b) {
+  console.log(e, a, b);
 }
