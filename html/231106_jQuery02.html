@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div>
+    <ul>
+      <li>orange</li>
+      <li>green</li>
+      <li>navy</li>
+    </ul>
+  </div>
+
+
+  <button onclick="appendJs()">append js</button>
+  <button onclick="appendJquery()">append jQuey</button>
+  <button onclick="prependJquery()">prepend jQuey</button>
+  <button onclick="prependJquery()">prepend jQuey</button>
+  <button onclick="beforeJquery()">before jQuey</button>
+  <button onclick="beforeJs()">before js</button>
+
+  <button onclick="afterJquery()">after jQuey</button>
+  <button onclick="afterJs()">after js</button>
+
+  <button onclick="emptyJquery()">empty jQuey</button>
+  <button onclick="emptyJs()">empty js</button>
+
+
+
+  <button onclick="findparent()">findparent</button>
+  <button onclick="findparents()">findparents</button>
+  <button onclick="findNext">findNext</button>
+  <button onclick="findPrev">findPrev</button>
+  <button onclick="findChildren()">findChildren</button>
+
+
+
+
+
+
+
+
+
+
+
+  <!---요소 삭제 -->
+  <div>
+    <ul>
+      <li></li>
+      <li id="li2"></li>
+      <li></li>
+    </ul>
+  </div>
+
+
+  <button onclick="removeJs()">hello</button>
+  <button onclick="removeJQuery()">hithere</button>
+
+
+  <script>
+    function appendJs() {
+      hello = document.createElement('li')
+      document.getElementsByTagName('ul').appendChild('hello')
+    }
+
+
+
+
+
+    function appendJs() {
+      //부모 ul에 자식 li 연결
+      //1. 부모 ul 선택
+      let ul = document.querySelector('ul');
+      // 2. 추가할 자식 li 요소 만들고 
+      let li = document.createElement('li')
+      //3.li 요소에 내용 추가 
+      li.innerText = "red";
+
+      //<li>red</li>
+      //4.ul에 자식 요소 li 연결 
+      ul.append(li);
+    }
+
+
+
+
+    function appendJquery() {
+      $('ul').append('<li>damn!!</li>');
+      document.write('hello')
+    }
+    //////////////////////
+    //////////////////////
+    function prependJs() {
+      //부모 ul에 자식 li 연결
+      //1. 부모 ul 선택
+      let ul = document.querySelector('ul');
+      // 2. 추가할 자식 li 요소 만들고
+      let li = document.createElement('li')
+      //3.li 요소에 내용 추가
+      li.innerText = "red";
+
+      //<li>red</li>
+      //4.ul에 자식 요소 li 연결
+      ul.append(li);
+    }
+
+    function prependJquery() {
+      $('ul').prepend('<li>damn!!</li>');
+      document.write('hello')
+    }
+
+    //형제 요소 추가 
+    function beforeJs() {
+      //추가할 기준이 되는 요소 선택
+      let green = document.querySelector('.green')
+      /// 추가할 요소 생성
+      let li = document.createElement('li');
+      li.innerText = "before Js";
+      green.before(li)
+    }
+
+
+    function beforeJquery() {
+      $(".green").before('<li>Hi guys!!</li>')
+    }
+
+    function afterJquery() {
+      $('.green').after('<li>Hello guys!!</li>')
+    }
+
+    function removeJs() {
+      let li = document.querySelector('#id')
+      li.remove();
+    }
+
+    function removeJquery() {
+      $('#li2').remove
+    }
+
+
+    ///empty 선택의 모든 자식을 내다 버린다. 무자식이 상팔자!!!!!!!!
+    function emptyJs() {
+      let li = document.querySelector('#id')
+
+      ///공백처리하세요~
+    }
+
+
+    function emptyJquery() {
+      $("#nums").empty
+    }
+
+
+
+    //요소 탐색 parent
+
+    function findParent() {
+      console.log($('#li2').parent())
+    }
+
+    function findParents() {
+      console.log($('#li2').parents())
+    }
+
+    function findNext() {
+      console.log($('#li2').findNext())
+    }
+
+    function findPrev() {
+      console.log($('#li2').prev())
+    }
+
+    function findChildren() {
+      console.log($('#nums').children())
+    }
+
+
+
+
+
+
+    //요소 맨 앞에 추가 (prepend)
+  </script>
+</body>
+
+</html>

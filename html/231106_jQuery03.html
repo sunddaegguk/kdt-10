@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
+  
+  
+  
+  <style>
+    .color-blue {
+      color: cyan;
+    }
+
+    .fs-50 {
+      font-size: 50px;
+    }
+
+    .bg-pink {
+      background-color: pink;
+    }
+
+    .color-orange {
+      background-color: orangered;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="hi" class="color-blue">안녕하세요.!</p>
+  <button class="add" onclick="addClass()">추가</button>
+
+  <botton class="addClass()">삽겹살 1인분 추가~</botton>
+  <botton class="removeClass()">이모부클라스</botton>
+  <botton class="hasClass()">클라스마거있나</botton>
+  <botton class="toggleClass()">토글링</botton>
+  <botton class="switchClass()">스위스클라스</botton>
+
+
+
+
+
+  함수 함수명 
+  p테그 선택 . 작동기능 . 클라스명 
+
+  <script>
+    function addClass() {
+      $('#hi').addClass('fs-50');
+    }
+
+    function removeClass() {
+      $('#hi').removeClass('fs-50'); //클래스 모두 제거
+    }
+
+    function hasClass() {
+      $('#hi').hasClass('fs-50');
+    }
+
+    function toggleClass() {
+      $('#hi').toggleClass('bg-pink');
+    }
+
+    function swtichClass() {
+      $('.#hi').swtichClass('color-blue', 'color-orange', 2);
+    }
+  </script>
+
+
+
+</body>
+
+</html>
