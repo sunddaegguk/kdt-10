@@ -204,12 +204,9 @@
       $("td>p").click(function () {
         $("#date").val($(this).text())
         what = this;
-
         $("button").click(function () {
           $("td > p").append("<p></p>")
-          what.append($("#content").val())
-          $("td>p").remove("<p></p>")
-
+          what.append($("#content").val()).remove("<p></p>")
         })
 
       })
