@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* all: 모든 경우*/
+    @media all and (min-width:600px) {
+      .all {
+        font-size: 2rem;
+        border: 1px solid red;
+      }
+    }
+
+    /*print: 인쇄, 인쇄 미리보기에서 */
+    @media print and (min-width:300px) {
+      .print {
+        font-size: 2rem;
+        border: 1px solid red;
+
+      }
+    }
+
+    /*screen : 인쇄를 제외한 모든 것 */
+    @media screen and (min-width:300px) {
+      .screen {
+        font-size: 2rem;
+        border: 1px solid red;
+
+      }
+
+      @media (min-width: 300px) {
+        .no {
+          font-size: 3rem;
+          border: 1px solid red;
+
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="all">all</div>
+  <div class="print">print</div>
+  <div class="screen">screen</div>
+  <div class="no">no</div>
+</body>
+
+</html>

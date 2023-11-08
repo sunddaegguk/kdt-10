@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      border: 1px solid red;
+    }
+
+    /* /condition01/ */
+    /* width 500px  500 이상 배경 하늘색, 300이하 배경 오렌지 */
+    /*500이상 일 경우 배경은 하늘*/
+    /*300 이하 배경은 오렌지*/
+    @media all and (max-width: 300px) {
+      .hello {
+        background-color: orange;
+      }
+    }
+
+    @media all and (min-width: 500px) {
+      .hello {
+        background-color: skyblue;
+      }
+    }
+
+    /* /condition02/ */
+    /*height: 300px  300이하 폰트 패밀리 변경, 500이상 배경 그린*/
+    @media all and (max-height: 300px) {
+      .hello {
+        font-family: 'Times New Roman', Times, serif;
+      }
+    }
+
+    @media all and (min-height: 500px) {
+      .hello {
+        background-color: greenyellow;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p class="hello">마리퀴리 실습</p>
+</body>
+
+</html>
+
+
+<!-- min max의 범위  -->
