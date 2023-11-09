@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
+
+</script>
+  <style>
+    div {
+      height: 100px;
+      width: 100px;
+      background-color: cyan;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- margin value -->
+  <!-- (속성)(추가속성)(크기) or (속성)(추가속성)-(breakpoint)-(크기) 형태로 작성 -->
+  <!-- 
+  속성
+  margin: m 
+  padding : p 
+
+  추가속성
+  top : t
+  bottom :  b
+  left : s(start)
+  right : e(end) 
+  x(상하)
+
+-->
+  <div class="mt-3">1</div>
+  <div class="mb-3">2</div>
+  <div class="ms-3">3</div>
+  <div class="me-3">4</div>
+  ----------------------------------------------------------------
+  <!-- padding value -->
+  <div class="pt-3">5</div>
+  <div class="pb-3">6</div>
+  <div class="ps-3">7</div>
+  <div class="pe-3">8</div>
+  ----------------------------------------------------------------
+  <div class="mt-md">9</div>
+  <div class="mb-md">10</div>
+  <div class="ms-md">11</div>
+  <div class="me-md">12</div>
+
+
+
+
+  <p class="bg-primary">primary</p>
+  <p class="bg-secondary">secondary</p>
+  <p class="bg-success">success</p>
+  <p class="bg-danger">danger</p>
+  <p class="bg-warning">warning</p>
+  <p class="bg-info">info</p>
+  <p class="bg-light">light</p>
+  <p class="bg-dark">dark</p>
+  <!-- subtitle subtle : 해당 색상 연하게 -->
+  <p class="bg-primary-subtle">primary</p>
+  <p class="bg-secondary-subtle">secondary</p>
+  <p class="bg-success-subtle">success</p>
+  <p class="bg-danger-subtle">danger</p>
+  <p class="bg-warning-subtle">warning</p>
+  <p class="bg-info-subtle">info</p>
+  <p class="bg-light-subtle">light</p>
+  <p class="bg-dark-subtle">dark</p>
+
+
+  ==================================================
+  <!-- 버튼 -->
+  <button type="button" class="btn btn-primary" id="btn-evnet">btn-primary</button>
+  <button type="button" class="btn btn-secondary">btn-secondary</button>
+  <button type="button" class="btn btn-success">btn-success</button>
+  <button type="button" class="btn btn-danger">btn-danger</button>
+  <button type="button" class="btn btn-warning">btn-warning</button>
+  <button type="button" class="btn btn-info">btn-info</button>
+  <button type="button" class="btn btn-light">btn-light</button>
+  <button type="button" class="btn btn-dark text-white">btn-dark text-white</button>
+
+  <script>
+    const btn = document.querySelector('#btn-event')
+    btn.addEventListener('click', (e) => {
+      alert('클릴캄');
+    })
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
